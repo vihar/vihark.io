@@ -28,20 +28,17 @@ function SiteLayout(props: any) {
                 <Nav className="me-auto"></Nav>
                 <Nav className="justify-content-end">
                   <ActiveLink href="/">
-                    <Nav.Link className="theme-font" href="#home">
-                      home
-                    </Nav.Link>
+                    <Nav.Link className="theme-font">home</Nav.Link>
                   </ActiveLink>
                   <ActiveLink href="/articles">
-                    <Nav.Link className="theme-font" href="#link">
-                      articles
-                    </Nav.Link>
+                    <Nav.Link className="theme-font">articles</Nav.Link>
                   </ActiveLink>
-                  <ActiveLink href="/projects">
-                    <Nav.Link className="theme-font" href="#link">
-                      projects
-                    </Nav.Link>
+                  <ActiveLink href="/talks">
+                    <Nav.Link className="theme-font">talks</Nav.Link>
                   </ActiveLink>
+                  <Nav.Link className="theme-font" href="/vihar-kurama.pdf">
+                    resume
+                  </Nav.Link>
                   <Nav.Link className="theme-font">
                     <span
                       aria-label="Toggle Dark Mode"

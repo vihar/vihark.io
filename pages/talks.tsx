@@ -1,7 +1,7 @@
 import { SiteLayout } from 'layouts';
 
-function ProjectsPage() {
+function TalksPage() {
   return <SiteLayout></SiteLayout>;
 }
 
-export default ProjectsPage;
+export default TalksPage;
