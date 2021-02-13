@@ -1,20 +1,24 @@
 import { SiteLayout } from 'layouts';
+import { Container, Button } from 'react-bootstrap';
 
 export default function Home() {
   return (
     <SiteLayout>
-      <div className="row pt-3">
-        <div className="col-md-8 align-self-center">
-          <h1 className="fw-bold">Hey, I’m Vihar Kurama</h1>
-          <p className="lead">
-            I’m a developer, writer, and creator. I work at Caravel.AI, as a co-founder and full
-            stack engineer.
-          </p>
+      <Container>
+        <div className="row justify-content-center">
+          <div className="col-md-6 text-center my-5 py-4">
+            <h1 className="fw-bolder mb-2">Hi, I’m Vihar Kurama</h1>
+            <p className="fs-4 fw-light">
+              I’m a developer, writer, and creator. I'm currently working at Caravel.AI, as a
+              co-founder and full stack engineer.
+            </p>
+            <Button className="me-3">More about me</Button>
+            <Button variant="outline-secondary">Follow me on Twitter</Button>
+
+            {/* <img className="img-fluid shadow" src="/vihar.jpg" width="250" /> */}
+          </div>
         </div>
-        <div className="col-md-4 text-center align-self-center">
-          <img className="img-fluid rounded-circle shadow" src="/vihar.jpg" width="250" />
-        </div>
-      </div>
+      </Container>
     </SiteLayout>
   );
 }

@@ -7,12 +7,14 @@
 // dark mode
 :root {
   --fg: #000;
-  --bg: #fff;
+  --bg: #fafafa;
+  --white-bg: #fff;
 }
 
 [data-theme='dark'] {
-  --fg: #fff;
+  --fg: #fafafa;
   --bg: #000;
+  --white-bg: #000;
 }
 
 body {
@@ -29,13 +31,44 @@ body {
   color: var(--fg) !important;
 }
 
-.active {
-  font-weight: bold;
-  background-color: #1de9b6;
-  background-image: linear-gradient(45deg, #1de9b6, #2979ff);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+// .active {
+//   font-weight: bold;
+//   background-color: #1de9b6;
+//   background-image: linear-gradient(45deg, #1de9b6, #2979ff);
+//   background-size: 100%;
+//   -webkit-background-clip: text;
+//   -moz-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   -moz-text-fill-color: transparent;
+// }
+
+.nav-link:hover {
+  color: #3c81f6 !important;
+  background-color: rgb(234, 241, 252);
 }
+
+.active {
+  color: #3c81f6 !important;
+  background-color: rgb(234, 241, 252);
+}
+
+.bg-white-custom {
+  background: var(--white-bg) !important;
+}
+
+$font-weight-bold: 500;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// Required
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
+// Optional
+@import '../node_modules/bootstrap/scss/root';
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/type';
+@import '../node_modules/bootstrap/scss/images';
+@import '../node_modules/bootstrap/scss/containers';
+@import '../node_modules/bootstrap/scss/grid';
