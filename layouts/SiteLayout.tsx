@@ -24,7 +24,7 @@ function SiteLayout(props: any) {
               <ActiveLink href="/">
                 <Nav.Link className="theme-font fw-bold px-4 mx-2 rounded">Home</Nav.Link>
               </ActiveLink>
-              <ActiveLink href="/articles">
+              <ActiveLink href="/about">
                 <Nav.Link className="theme-font fw-bold px-4 mx-2 rounded">About</Nav.Link>
               </ActiveLink>
               <ActiveLink href="/blog">
@@ -50,7 +50,11 @@ function SiteLayout(props: any) {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {props.children}
+      <Container>
+        <div className="row justify-content-center">
+          <div className="col-md-6">{props.children}</div>
+        </div>
+      </Container>
     </>
   );
 }
