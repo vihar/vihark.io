@@ -16,7 +16,7 @@ function SiteLayout(props: any) {
 
   return (
     <>
-      <Navbar className="w-100 bg-white-custom border-bottom" expand="lg">
+      <Navbar className="w-100 custom-nav" expand="lg">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
