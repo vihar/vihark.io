@@ -1,9 +1,16 @@
 // layout
 import { SiteLayout } from 'layouts';
+// react bootstrap
+import { Image } from 'react-bootstrap';
 
 function AboutPage() {
   return (
     <SiteLayout>
+      <Image
+        className="rounded-3 img-fluid my-5 mx-auto d-block"
+        src="/vihar_color.jpg"
+        width="300"
+      />
       <p>I'm a full-stack engineer, designer, and writer, currently living in India.</p>
 
       <p>

@@ -10,11 +10,17 @@ export default function Home() {
     <SiteLayout>
       <div className="text-center my-5 py-5">
         <h1 className="fw-bolder mb-2">Hi, I’m Vihar Kurama</h1>
-        <p className="fs-4 fw-light text-muted">
+        <p className="fs-4  text-muted lh-sm">
           I’m a developer, writer, and creator. I'm currently working at Caravel.AI, as a co-founder
           and full stack engineer.
         </p>
-        <Button className="me-3 py-2 px-3 shadow">More about me</Button>
+
+        <Link href="about">
+          <a>
+            <Button className="me-3 py-2 px-3 shadow">More about me</Button>
+          </a>
+        </Link>
+
         <Button className="py-2 px-3 shadow" variant="outline-secondary">
           Follow me on Twitter
         </Button>
@@ -71,7 +77,7 @@ export default function Home() {
           <small>
             I also write various blogs and guides related to programming languages, web development
             and machine learning; check my articles{' '}
-            <Link href="">
+            <Link href="/writing">
               <a>here!</a>
             </Link>
           </small>

@@ -30,7 +30,7 @@ function SiteLayout(props: any) {
               <ActiveLink href="/blog">
                 <Nav.Link className="theme-font fw-bold px-4 mx-2 rounded">Blog</Nav.Link>
               </ActiveLink>
-              <ActiveLink href="/talks">
+              <ActiveLink href="/writing">
                 <Nav.Link className="theme-font fw-bold px-4 mx-2 rounded">Writing</Nav.Link>
               </ActiveLink>
               <Nav.Link className="theme-font fw-bold px-4 mx-2 rounded" href="/vihar-kurama.pdf">
