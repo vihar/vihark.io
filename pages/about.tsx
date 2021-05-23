@@ -11,6 +11,9 @@ function AboutPage() {
         src="/vihar_color.jpg"
         width="300"
       />
+
+      <p>I haven't updated this page yet :/</p>
+
       <p>I'm a full-stack engineer, designer, and writer, currently living in India.</p>
 
       <p>

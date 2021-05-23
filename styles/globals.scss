@@ -69,11 +69,13 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 p {
-  font-size: 1.125rem;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
-$font-weight-bold: 500;
+$primary: #fff;
 
+// bootstrap overide
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 // Required
@@ -88,3 +90,20 @@ $font-weight-bold: 500;
 @import '../node_modules/bootstrap/scss/images';
 @import '../node_modules/bootstrap/scss/containers';
 @import '../node_modules/bootstrap/scss/grid';
+
+.name {
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}

@@ -1,7 +1,8 @@
 // layouts
+
 import { SiteLayout } from 'layouts';
 
-function WritingPage() {
+function BlogPage() {
   return (
     <SiteLayout>
       <p className="mt-5 text-center">Coming Soon!</p>
@@ -9,4 +10,4 @@ function WritingPage() {
   );
 }
 
-export default WritingPage;
+export default BlogPage;
