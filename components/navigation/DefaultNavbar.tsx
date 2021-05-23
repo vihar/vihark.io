@@ -22,6 +22,7 @@ function DefaultNavbar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
+              {/* TODO: Map Navigation Items */}
               <ActiveLink href="/">
                 <Nav.Link className="theme-font px-4 mx-2 rounded">Home</Nav.Link>
               </ActiveLink>

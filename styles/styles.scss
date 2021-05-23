@@ -1,0 +1,35 @@
+// navigation
+
+.nav-link:hover {
+  color: var(--active-color) !important;
+  background-color: var(--bg-hover-color) !important;
+}
+
+.active {
+  color: var(--active-color) !important;
+  background-color: var(--bg-hover-color) !important;
+}
+
+.custom-nav {
+  background: var(--bg-color) !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+// index page
+
+.name-gradient {
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}

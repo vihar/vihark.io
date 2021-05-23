@@ -11,7 +11,7 @@ export default function Home() {
       <div className="my-5 py-5">
         <h2 className="mb-2">
           <span className="fw-light">Hello there, I'm</span>
-          <span className="fw-bolder name"> Vihar Kurama</span>
+          <span className="fw-bolder name-gradient"> Vihar Kurama</span>
         </h2>
         <p className="text-muted">
           I’m a developer, writer, and creator. I'm currently working at Caravel.AI, as a co-founder

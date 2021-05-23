@@ -1,4 +1,11 @@
+// bootstrap
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+// bootstrap override
+@import './bootstrap_override.scss';
+
+// custom styles
+@import './styles.scss';
 
 * {
   box-sizing: border-box;
@@ -8,11 +15,7 @@
   --border-color: #e1e2e4;
   --bg-color: #fff;
   --bg-hover-color: #eaf1fc;
-  --bg-light-color: #f4f5f8;
-  --bg-secondary-color: #fff;
   --text-color: #212121;
-  --text-hover-color: #f0f3f9;
-  --text-light-color: #3c4149;
   --active-color: #1089ff;
 }
 
@@ -21,11 +24,7 @@
   --border-color: #303236;
   --bg-color: #000;
   --bg-hover-color: #151c29;
-  --bg-light-color: #26292b;
-  --bg-secondary-color: #27282b;
   --text-color: #f7f8f8;
-  --text-hover-color: #2d2f36;
-  --text-light-color: #d7d8db;
   --active-color: #1089ff;
 }
 
@@ -39,71 +38,13 @@ body {
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+// typography
+
 .theme-font {
   color: var(--text-color) !important;
 }
 
-// .active {
-//   font-weight: bold;
-//   background-color: #1de9b6;
-//   background-image: linear-gradient(45deg, #1de9b6, #2979ff);
-//   background-size: 100%;
-//   -webkit-background-clip: text;
-//   -moz-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   -moz-text-fill-color: transparent;
-// }
-
-.nav-link:hover {
-  color: var(--active-color) !important;
-  background-color: var(--bg-hover-color) !important;
-}
-
-.active {
-  color: var(--active-color) !important;
-  background-color: var(--bg-hover-color) !important;
-}
-
-.custom-nav {
-  background: var(--bg-color) !important;
-  border-bottom: 1px solid var(--border-color);
-}
 p {
   font-size: 1rem;
   line-height: 1.75;
-}
-
-$primary: #fff;
-
-// bootstrap overide
-@import '../node_modules/bootstrap/scss/bootstrap';
-
-// Required
-@import '../node_modules/bootstrap/scss/functions';
-@import '../node_modules/bootstrap/scss/variables';
-@import '../node_modules/bootstrap/scss/mixins';
-
-// Optional
-@import '../node_modules/bootstrap/scss/root';
-@import '../node_modules/bootstrap/scss/reboot';
-@import '../node_modules/bootstrap/scss/type';
-@import '../node_modules/bootstrap/scss/images';
-@import '../node_modules/bootstrap/scss/containers';
-@import '../node_modules/bootstrap/scss/grid';
-
-.name {
-  color: #f35626;
-  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 10s infinite linear;
-}
-
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
 }
