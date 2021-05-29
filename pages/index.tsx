@@ -83,20 +83,18 @@ export default function Home() {
 
         {popular_writings.map((item, index) => {
           return (
-            <>
-              <div className="card p-3 shadow-sm border-0 card-left-border mt-3">
-                <div className="d-flex">
-                  <div>
-                    <p className="mb-0">{item.title}</p>
-                  </div>
-                  <div className="ms-auto">
-                    <img src={item.logo} width="20" />
-                  </div>
+            <div className="card p-3 shadow-sm border-0 card-left-border mt-3" key={index}>
+              <div className="d-flex">
+                <div>
+                  <p className="mb-0">{item.title}</p>
                 </div>
-
-                <p className="p-small text-muted mb-1">{item.desc}</p>
+                <div className="ms-auto">
+                  <img src={item.logo} width="20" />
+                </div>
               </div>
-            </>
+
+              <p className="p-small text-muted mb-1">{item.desc}</p>
+            </div>
           );
         })}
 
@@ -112,19 +110,17 @@ export default function Home() {
 
         {featured_items.map((item, index) => {
           return (
-            <>
-              <div className="card p-3 shadow-sm border-0 mt-3">
-                <div className="row">
-                  <div className="col-md-2 text-center align-self-center p-0">
-                    <img className="img-fluid" src={item.logo} width="50" />
-                  </div>
-                  <div className="col-md-10 align-self-center">
-                    <p className="mb-0 fw-bold">{item.title}</p>
-                    <p className="p-small text-muted mb-1">{item.desc}</p>
-                  </div>
+            <div className="card p-3 shadow-sm border-0 mt-3" key={index}>
+              <div className="row">
+                <div className="col-md-2 text-center align-self-center p-0">
+                  <img className="img-fluid" src={item.logo} width="50" />
+                </div>
+                <div className="col-md-10 align-self-center">
+                  <p className="mb-0 fw-bold">{item.title}</p>
+                  <p className="p-small text-muted mb-1">{item.desc}</p>
                 </div>
               </div>
-            </>
+            </div>
           );
         })}
 
