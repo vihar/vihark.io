@@ -98,7 +98,7 @@ export default function Home() {
           );
         })}
 
-        <Link href="/articles">
+        <Link href="/writings">
           <a className="text-decoration-none">
             <p className="text-muted mb-0 mt-3 fw-light p-small">
               View all articles<i className="bi bi-arrow-right ms-2"></i>
