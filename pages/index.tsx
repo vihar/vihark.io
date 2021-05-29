@@ -28,6 +28,12 @@ let featured_items = [
     desc: 'Online platform to learn CS in a more fun and interactive way',
     logo: '/logos/keats.png',
     link: 'https://towardsdatascience.com/linear-algebra-for-deep-learning-506c19c0d6fa'
+  },
+  {
+    title: 'LiberoMeet',
+    desc: 'Video conferencing application using WEBRTC, enables users to create events and meetings in the conference rooms. ',
+    logo: '/logos/libero.png',
+    link: 'https://towardsdatascience.com/linear-algebra-for-deep-learning-506c19c0d6fa'
   }
 ];
 
@@ -94,17 +100,25 @@ export default function Home() {
           );
         })}
 
+        <Link href="/articles">
+          <a className="text-decoration-none">
+            <p className="text-muted mb-0 mt-3 fw-light p-small">
+              View all articles<i className="bi bi-arrow-right ms-2"></i>
+            </p>
+          </a>
+        </Link>
+
         <h5 className="fw-bold mt-5">Selected Work</h5>
 
         {featured_items.map((item, index) => {
           return (
             <>
-              <div className="card p-3 shadow-sm border-0 card-left-border mt-3">
-                <div className="d-flex align-items-center">
-                  <div className="">
+              <div className="card p-3 shadow-sm border-0 mt-3">
+                <div className="row">
+                  <div className="col-md-2 text-center align-self-center p-0">
                     <img className="img-fluid" src={item.logo} width="50" />
                   </div>
-                  <div className="ms-4">
+                  <div className="col-md-10 align-self-center">
                     <p className="mb-0 fw-bold">{item.title}</p>
                     <p className="p-small text-muted mb-1">{item.desc}</p>
                   </div>
@@ -113,6 +127,8 @@ export default function Home() {
             </>
           );
         })}
+
+        <div className="mb-5"></div>
       </div>
     </SiteLayout>
   );
