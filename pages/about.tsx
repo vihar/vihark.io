@@ -12,28 +12,22 @@ function AboutPage() {
         width="300"
       />
 
-      <p>I haven't updated this page yet :/</p>
-
-      <p>I'm a full-stack engineer, designer, and writer, currently living in India.</p>
-
-      <p>
+      <p className="text-muted p-small">
+        Hi, I'm Vihar Kurama. I'm a developer, writer, and creator.
+        <br />
+        <br />
         Right now, I'm building scalable products at Caravel.AI and Soulpage IT. My primary work
         involves managing dev teams, architecturing applications and doing heavy frontend
         engineering.
-      </p>
-
-      <p>
+        <br />
+        <br />
         I'm also passionate about Machine Learning as well. I'm consulting at Eprosoft America Inc,
         where I lead the ML division, working on projects related to Information Extraction, NER and
         Speech.
-      </p>
-
-      <p>
+        <br />
+        <br />
         Apart from these, I've written several articles relating to programming languages, web
-        development and machine learning at Auth0, Paperspace, BuiltIn, Medium and Nanonets.{' '}
-      </p>
-
-      <p>
+        development and machine learning at Auth0, Paperspace, BuiltIn, Medium and Nanonets. <br />
         You can find me on Twitter where I talk about design and development, or on GitHub, where
         I'm building in the open.
       </p>

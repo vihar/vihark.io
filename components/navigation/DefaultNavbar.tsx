@@ -38,7 +38,7 @@ function DefaultNavbar() {
               <Nav.Link className="theme-font px-4 mx-2 rounded" href="/vihar-kurama.pdf">
                 Resume
               </Nav.Link>
-              <Nav.Link className="theme-font px-4 mx-2 rounded">
+              {/* <Nav.Link className="theme-font px-4 mx-2 rounded">
                 <span
                   aria-label="Toggle Dark Mode"
                   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -47,7 +47,7 @@ function DefaultNavbar() {
                     <span>{theme === 'dark' ? <span>Go Light</span> : <span>Go Dark</span>}</span>
                   )}
                 </span>
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
