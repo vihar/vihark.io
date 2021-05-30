@@ -1,4 +1,4 @@
-const title = 'Vihar Kurama – Developer, writer, designer.';
+const title = 'Vihar Kurama – Developer, writer, creator.';
 const description = 'Full-stack developer, JavaScript enthusiast, and designer.';
 
 const SEO = {

@@ -11,6 +11,12 @@ export default function App({ Component, pageProps }) {
     <ThemeProvider>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script
+          async
+          defer
+          data-domain="vihark.io"
+          src="https://plausible.io/js/plausible.js"
+        ></script>
       </Head>
       <DefaultSeo {...SEO} />
       <Component {...pageProps} />
